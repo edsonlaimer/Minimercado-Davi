@@ -1,76 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categorias - Minimercado Davi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .header {
+      background-color: #007bff; /* Azul */
+      color: white; /* Texto branco */
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .footer {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding: 1rem 0;
+    }
+    main {
+      margin: 2rem auto;
+      max-width: 800px;
+      text-align: center;
+    }
+    section {
+      margin: 2rem 0;
+    }
+    img {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: white; /* Link branco no header */
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Minimercado Davi</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="categorias.html">Categorias</a>
-      <a href="servicos.html">Serviços</a>
+      <a href="index.html">Home</a> | 
+      <a href="categorias.html">Categorias</a> | 
+      <a href="servicos.html">Serviços</a> | 
       <a href="contato.html">Contato</a>
     </nav>
   </header>
 
   <main>
-    <h2>Categorias</h2>
-
+    <h2>Categorias de Produtos</h2>
     <section>
       <h3>Frutas e Verduras</h3>
-      <article>
-        <img src="imagens/maca.jpg" width="200" height="200" alt="Maçã">
-        <h4>Maçã</h4>
-        <p>Maçãs frescas e suculentas.</p>
-        <p>R$ 5,00 / kg</p>
-      </article>
-      <article>
-        <img src="imagens/banana.jpg" width="200" height="200" alt="Banana">
-        <h4>Banana</h4>
-        <p>Bananas maduras e saborosas.</p>
-        <p>R$ 4,00 / kg</p>
-      </article>
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="text-center">
+          <img src="maca.jpg" width="150" height="150" alt="Imagem de uma maçã">
+          <p>Maçã - R$ 5,00</p>
+        </div>
+        <div class="text-center">
+          <img src="banana.jpg" width="150" height="150" alt="Imagem de uma banana">
+          <p>Banana - R$ 4,00</p>
+        </div>
+      </div>
     </section>
 
     <section>
       <h3>Produtos Alimentícios Não Perecíveis</h3>
-      <article>
-        <img src="imagens/arroz.jpg" width="200" height="200" alt="Arroz">
-        <h4>Arroz</h4>
-        <p>Pacote de 5kg de arroz branco.</p>
-        <p>R$ 20,00</p>
-      </article>
-      <article>
-        <img src="imagens/feijao.jpg" width="200" height="200" alt="Feijão">
-        <h4>Feijão</h4>
-        <p>Pacote de 1kg de feijão preto.</p>
-        <p>R$ 8,00</p>
-      </article>
-    </section>
-
-    <section>
-      <h3>Produtos de Higiene e Limpeza</h3>
-      <article>
-        <img src="imagens/detergente.jpg" width="200" height="200" alt="Detergente">
-        <h4>Detergente</h4>
-        <p>Detergente líquido neutro de 500ml.</p>
-        <p>R$ 3,00</p>
-      </article>
-      <article>
-        <img src="imagens/sabao.jpg" width="200" height="200" alt="Sabão em Pó">
-        <h4>Sabão em Pó</h4>
-        <p>Sabão em pó para roupas (2kg).</p>
-        <p>R$ 15,00</p>
-      </article>
+      <div class="text-center">
+        <img src="arroz.jpg" width="150" height="150" alt="Imagem de um pacote de arroz">
+        <p>Arroz - R$ 10,00</p>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2024 Minimercado Davi. Todos os direitos reservados.</p>
-    <p>Contato: davi@minimercado.com</p>
+    <p>Contato: <a href="mailto:contato@minimercadodavi.com">contato@minimercadodavi.com</a></p>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
